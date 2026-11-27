@@ -1,0 +1,267 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* All Videos */
+
+.video_length,
+.second_page,
+.Third_pagee,
+.Fourth_page,
+.fifth_page,
+.lastpage {
+    display: block;
+    width: 100%;
+}
+
+/* Second, Third and Fourth Page Containers */
+
+.second_page_blue,
+.third-page-container,
+.fourth-page-container {
+    position: relative;
+    width: 100%;
+}
+
+/* Second Page Button */
+
+.Get_in_Touch {
+    position: absolute;
+    left: 5.3%;
+    top: 68.5%;
+
+    width: 155px;
+    height: 37px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #dfc4e9;
+    border-radius: 50px;
+
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.Get_in_Touch:hover {
+    background-color: #d077f0;
+    transform: scale(1.05);
+}
+
+/* Third Page Button */
+
+.contact-btn {
+    position: absolute;
+    left: 42.3%;
+    top: 72.5%;
+
+    width: 155px;
+    height: 37px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #d5e655;
+    border-radius: 50px;
+
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #c4d733;
+    transform: scale(1.05);
+}
+
+/* Fourth Page Button */
+
+.contact-us {
+    position: absolute;
+    left: 5.3%;
+    top: 68.5%;
+
+    width: 155px;
+    height: 37px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #dfc4e9;
+    border-radius: 50px;
+
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.contact-us:hover {
+    background-color: #d077f0;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+
+/* Mobile */
+
+@media (max-width: 750px) {
+
+    .contact-btn,
+    .Get_in_Touch,
+    .contact-us {
+        width: 155px;
+        height: 37px;
+        font-size: 10px;
+    }
+
+}
+
+/* Tablet and Medium Screens */
+
+@media (min-width: 750.02px) and (max-width: 1300px) {
+
+    .contact-btn,
+    .Get_in_Touch,
+    .contact-us {
+        width: 200px;
+        height: 50px;
+        font-size: 15px;
+    }
+
+}
+
+/* Large Screens */
+
+@media (min-width: 1300.02px) {
+
+    .contact-btn,
+    .Get_in_Touch,
+    .contact-us {
+        width: 300px;
+        height: 80px;
+        font-size: 20px;
+    }
+
+}
+
+/* Last page container */
+#lastpage {
+    position: relative;
+    width: 100%;
+}
+
+/* Project enquiry form */
+.project-enquiry-form {
+    position: absolute;
+    top: 59%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: min(620px, 85%);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+
+    z-index: 5;
+}
+
+/* Input fields */
+.project-enquiry-form input,
+.project-enquiry-form textarea {
+    width: 100%;
+    padding: 10px 14px;
+
+    border: 1px solid #999;
+    border-radius: 8px;
+
+    background: rgba(255, 255, 255, 0.9);
+    color: #000;
+
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+
+    outline: none;
+}
+
+/* Reference link and description */
+.project-enquiry-form input:nth-of-type(3),
+.project-enquiry-form textarea {
+    grid-column: span 2;
+}
+
+/* Text area */
+.project-enquiry-form textarea {
+    resize: vertical;
+}
+
+/* Submit button */
+.project-enquiry-form button {
+    grid-column: span 2;
+
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+
+    background: #000;
+    color: white;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.project-enquiry-form button:hover {
+    background: #444;
+}
+
+/* Responsive design */
+@media (max-width: 750px) {
+    .project-enquiry-form {
+        top: 57%;
+        width: 88%;
+        gap: 6px;
+    }
+
+    .project-enquiry-form input,
+    .project-enquiry-form textarea {
+        padding: 7px 9px;
+        font-size: 11px;
+    }
+
+    .project-enquiry-form button {
+        padding: 8px;
+        font-size: 12px;
+    }
+}
+
